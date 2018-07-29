@@ -47,11 +47,11 @@
                 }
             }
             if(video.src){
-                var img_data=back.toDataURL("image/jpeg", 0.1);
+                var img_data=back.toDataURL("image/jpeg", 0.9);
                 console.log(img_data);
                 socket.send(img_data);
             }
-            setTimeout(draw, 200);
+            setTimeout(draw, 100);
         }
         navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia ||
         navigator.mozGetUserMedia || navigator.msGetUserMedia;
