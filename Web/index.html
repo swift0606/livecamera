@@ -24,7 +24,9 @@
         var image = document.getElementById('receiver');
         receiver_socket.onmessage = function(data)
         {
-            image.src=data.data;
+            var img_data=data.data;
+            console.log(img_data);
+            image.src=img_data;
         }
     </script>
 </body>
