@@ -21,7 +21,7 @@ $web = new WebServer("http://0.0.0.0:8088");
 // WebServer数量
 $web->count = 2;
 // 设置站点根目录
-$web->addRoot('www.your_domain.com', __DIR__.'/Web');
+$web->addRoot('love.huhuo.net', __DIR__.'/Web');
 
 
 // 如果不是在根目录启动，则运行runAll方法
